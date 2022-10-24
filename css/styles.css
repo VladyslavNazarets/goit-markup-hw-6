@@ -162,6 +162,7 @@ font-size: 14px;
 line-height: 1.14;
 text-decoration:none;
 display: flex;
+align-items: center;
 padding-top: 32px;
 padding-bottom: 32px;
 transition: color 250ms var(--taming-fix);
@@ -815,7 +816,7 @@ background-color: var(--footer-color);
 padding-left: 16px;
 padding-top: 15px;
 padding-bottom: 15px;
-color: rgba(255, 255, 255, 0.6);
+color: rgba(255, 255, 255);
 outline: transparent;
 }
 .foot-input-teg{
@@ -892,13 +893,17 @@ border-radius: 4px;
     padding: 0%;
     cursor: pointer;
     transition: transform 250ms var(--taming-fix);
-    display: block;
+   
 }
 .modal-close{
     transition: transform 250ms var(--taming-fix), fill 250ms var(--taming-fix); 
 }
-.modal-btn:hover .modal-close,
-.modal-btn:focus .modal-close{
+.modal-close:hover
+.modal-close:focus{
+    /* fill: var(--accent-color); */
+}
+.modal-btn .modal-close:hover,
+.modal-btn .modal-close:focus{
 fill: var(--accent-color);
 }
 .modal-title{
@@ -1009,7 +1014,7 @@ font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.03em;
 display: flex;
-align-items: baseline;
+align-items: center;
 margin-left: 15px;
 }
 .chat-text::before{
@@ -1030,8 +1035,8 @@ margin-left: 15px;
     background-repeat: no-repeat;
     border-color: transparent;
     transition: background-color 250ms var(--taming-fix);
-
 }
+
 .input-check:focus + .chat-text::before{
     border-color: var(--accent-color);
     
