@@ -258,7 +258,7 @@ margin: 0 auto;
 
 }
 
-.button{
+.button-ok{
 color:  var(--primari-text-color);
  background-color: var(--accent-color);
 font-weight: 700;
@@ -279,7 +279,7 @@ transition: background-color 250ms var(--taming-fix);
 
 
 }
-.button:hover ,button:focus{
+.button-ok:hover ,.button-ok:focus{
     color: var(--primari-text-color) ;
     background-color:var(--button-color) ;
 }
@@ -835,6 +835,9 @@ margin-left: 12px;
 text-align: start;
 padding-left: 28px;
 border-color: transparent;
+position: relative;
+display: flex;
+align-items: center;
 }
 .too-right{
     margin-left: 93px;
@@ -851,7 +854,7 @@ border-color: transparent;
     
 }
 .online-fly{
-    position: relative
+    
 }
 .backdrop{
     position:fixed;
@@ -896,15 +899,13 @@ border-radius: 4px;
    
 }
 .modal-close{
-    transition: transform 250ms var(--taming-fix), fill 250ms var(--taming-fix); 
+    fill: currentColor;
+    
 }
-.modal-close:hover
-.modal-close:focus{
-    /* fill: var(--accent-color); */
-}
-.modal-btn .modal-close:hover,
-.modal-btn .modal-close:focus{
-fill: var(--accent-color);
+
+.modal-btn:hover,
+.modal-btn:focus{
+color: var(--accent-color);
 }
 .modal-title{
 font-size: 20px;
